@@ -1,0 +1,35 @@
+.content {
+    width: 83%;
+    margin-left: 17%;
+    top: 120px;
+    position: relative;
+    background-color: #e3e1e1;
+}
+
+.product {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.details {
+    width: 30%;
+    background-color: white;
+    border: 3px solid #D7D6D6;
+    margin: 20px 10px 20px 10px;
+    text-align: center;
+}
+
+.product .details .image img {
+    margin: 20px 0 0 0;
+    width: 60%;
+    height: 130px;
+}
+
+.info {
+    text-align: left;
+}
+
+.info li {
+    margin-top: 10px;
+}
