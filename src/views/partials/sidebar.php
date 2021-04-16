@@ -3,13 +3,13 @@
         Modelos
     </div>
     <div class="list">
-        <div>
+        <div class="lista-sidebar">
         <ul>
-            <li>Gigante nº4</li>
-            <li>Gigante nº5</li>
-            <li>Jeans</li>
-            <li>Tijubana</li>
-            <li>Super Tijubana</li>
+        <li><a href="<?=$base;?>/admin/gerenciadorProduto">Todos Produtos</a></li>
+        <?php foreach($modelos as $modelo):?>
+        
+        <li><a href="<?=$base;?>/admin/gerenciadorProduto?modelo=<?=$modelo['nome'];?>"><?=$modelo['nome']?></a></li>
+        <?php endforeach ?>
         </ul>
         </div>
         

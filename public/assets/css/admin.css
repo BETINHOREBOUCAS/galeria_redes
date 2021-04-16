@@ -1,0 +1,70 @@
+.content-config {
+    top: 120px;
+    position: relative;
+}
+
+.panel-admin {
+    width: 100%;
+    height: 535px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel-admin div {
+    margin-bottom: 20px;
+}
+
+.panel-admin a {
+    text-decoration: none;
+}
+
+.options {
+    width: 200px;
+    height: 200px;
+    margin: 0 10px 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #201C1C;
+    border-radius: 10px;
+    color: white;
+    transition: .8s;
+}
+
+.options:hover {
+    background-color: darkorange;
+    color: black;    
+}
+
+.options .icon {
+    font-size: 50pt;
+}
+
+.options .desc {
+    margin-left: 10px;
+}
+
+.aviso {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.aviso div {
+    margin-top: 10px;
+    width: 50%;
+    align-items: center;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 10px;
+}
+
+.checkbox {
+    margin: 10px 0px 0px 10px;
+}
+
+#campoModelos {
+    display: none;
+}

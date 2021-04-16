@@ -1,7 +1,12 @@
-<?php $render('header', ['user' => $user]); ?>
-<?php $render('sidebar_home', ['modelos' => $modelos, 'url' => $url]); ?>
+
+<?php $render('header2', ['user' => $user]); ?>
+<?php $render('sidebar', ['modelos' => $modelos]); ?>
 
 <div class="content">
+
+    <div class="voltar">
+        <a href="<?= $base; ?>/admin" title="voltar"><i class="far fa-arrow-alt-circle-left"></i></a>
+    </div>
 
     <?php if(!empty($produtos) && isset($produtos)) :?>
 
@@ -19,6 +24,14 @@
         <?php endif ?>
 
         <div class="details">
+            <div class="action">
+                <div class="edit">
+                    <a href="<?=$base;?>/admin/gerenciadorProduto/editar/<?=$produtos[$i-1]['id'];?>"><i class="far fa-edit"></i></a>
+                </div>
+                <div class="delete">
+                    <a href="javascript:;" onclick="excluir(<?=$produtos[$i-1]['id'];?>)"><i class="far fa-trash-alt"></i></a>
+                </div>
+            </div> <br><br>
             <div class="image">
                 <img src="<?= $base; ?>/imgProdutos/<?=$produtos[$i-1]['images'][0]['nome']?>" alt="Rede Gigante">
             </div>
@@ -48,8 +61,8 @@
 </div>
 <?php endif ?>
 <?php else :?>
-    <div style="text-align: center;">Nenhum produto cadastrado!</div>
+    <div style="text-align: center;">Nenhum produto cadastrado para este usúario!</div>
 <?php endif ?>
 
-
+<script src="<?=$base;?>/assets/js/usuarios.js"></script>
 <?=$render('footer');?>

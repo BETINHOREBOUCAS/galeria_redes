@@ -20,13 +20,11 @@
 </head>
 
 <body>
-
     <div class="menu-bar">
         <div class="sub-content">
             <div class="img">
-            <img src="<?= $base; ?>/imgLogo/<?=$user['principal']['logo'];?>" alt="Logo Redes Rebouças" width="50">
-            </div>
-
-            
+                <img src="<?= $base; ?>/imgLogo/<?=$user['principal']['logo'];?>" alt="Logo Redes Rebouças" width="50">
+            </div>   
+            <div class="power"><a href="<?=$base;?>/admin/sair"><i class="fas fa-power-off" title="Sair"></i></a></div>         
         </div>
     </div>

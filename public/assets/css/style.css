@@ -1,0 +1,13 @@
+* {
+    font-family: Risque;
+}
+
+body {
+    margin: 0;
+    background-color: #e3e1e1;
+}
+
+span {
+    color: red;
+    display: none;
+}
